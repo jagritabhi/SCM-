@@ -1,0 +1,258 @@
+ /* Reset some default styles for the page */
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+        body {
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(173, 159, 185);
+            /* width: 100vw; */
+        }
+
+        /* Style the navigation bar */
+        .navbar {
+            background-color: #333;
+            overflow: auto;
+            height: 60px;
+            font-weight: 1000;
+            justify-content: space-evenly;
+        }
+
+        /* Style the navigation links */
+        .navbar a {
+            float: left;
+            display: block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        /* Change the color of links on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style the logo */
+        .navbar .logo {
+            float: left;
+            padding: 10px;
+            font-size: 24px;
+            color: white;
+        }
+
+        
+        /* Style the navigation links container */
+        .navbar .nav-links {
+            float: right;
+            color: hsl(0, 0%, 100%);
+        }
+        
+        
+        /*Style the Tagline*/
+        #tagline
+        {
+            height: 60px;
+            color: black;
+            background-color: #dcedf6;
+
+            overflow-wrap:break-word;
+            display: flex;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        #tagline table{
+            font-family: 'baloo bhai',cursive;
+        }
+        #tagline table h2{
+            font-family: 'baloo bhai',cursive;
+            font-size: 40px;
+
+        }
+        #tagline h1{
+            overflow-wrap: anywhere;
+        }
+        .categories{
+            border: 2px solid black;
+            
+        }
+        .categories td{
+            width:200px;
+            background-color: rgb(253 219 164);
+            padding: 20px;
+            text-decoration: none;
+            justify-content: center;
+            overflow-wrap: anywhere;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .categories td:hover{
+            background-color: #dc7db7;
+            color: black;
+        }
+            
+        .categories td a{
+            text-decoration: none;
+            font-size: large;
+            font-weight: 1000;
+            color: #333;
+         
+        }
+        div.gallery {
+            border: 1px solid #ccc;
+            background-color: rgb(33, 32, 32);
+          }
+          
+          div.gallery:hover {
+            border: 1px solid #777;
+            cursor: pointer;
+          }
+          
+          div.gallery img {
+            width: 90%;
+            height: auto;
+            padding: 5px;
+          }
+          
+          div.desc {
+            padding: 15px;
+            text-align: center;
+            color:white;
+          }
+          
+          * {
+            box-sizing: border-box;
+          }
+          
+          .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+          
+          }
+          
+          @media only screen and (max-width: 700px) {
+            .responsive {
+              width: 49.99999%;
+              margin: 6px 0;
+            }
+          }
+          
+          @media only screen and (max-width: 500px) {
+            .responsive {
+              width: 100%;
+            }
+          }
+          
+          .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          /*products*/
+          .products{
+            color: rgb(0, 0, 0);
+            font-weight: bold ;
+            font-size: 50PX;
+            justify-content: center;
+            text-align: center;
+            text-shadow: #561eb1;
+            border: 2px solid #6c0057;
+            background: #e4a152;
+
+          }
+          
+                                                            
+        /*sharing icons*/
+        .image-scroll-container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .image-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .image-list li {
+            display: inline-block;
+        }
+        
+        .image-list img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        
+        .prev-button,
+        .next-button {
+            background-color: #b11e1e;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        .offers{
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: #47294c;
+            text-decoration: none;
+        }
+        
+        .offers h1 {
+          text-decoration: none;
+          color: black;
+          border: 2px solid #6c0057;
+          background: #e49c52;
+        }
+        #bankandotheroffers{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        #bankandotheroffers img{
+          width:25%;
+        }
+
+        #slider {
+            overflow: hidden;
+           }
+                                                          
+           @keyframes slider {
+             0% { left: 0; }
+            30% { left: 0; }
+            33% { left: -100%; }
+            63% { left: -100%; }
+            66% { left: -200%; }
+            95% { left: -200%; }
+            100% { left: 0; }
+           }
+           #slider figure {
+            width:300%;
+            height: 100%;
+            position: relative;
+            animation: 9s slider infinite;
+           }
+                                                          
+           #slider figure img {
+             width: 33%;
+            height : 50%;
+             float: left;
+          }
+          
+
+                         
+        
+        
+       
